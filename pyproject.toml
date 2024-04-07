@@ -2,11 +2,32 @@
 name = "poetry-plugin-commands"
 version = "0.0.1"
 description = "Poetry plugin for simple custom user commands execution."
+readme = "README.md"
 authors = ["BlackCatDevel0per <bcdev@mail.ru>"]
 license = "Apache 2.0"
 
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Environment :: Console",
+	"Intended Audience :: Developers",
+	"Intended Audience :: Information Technology",
+	"Intended Audience :: System Administrators",
+	"License :: OSI Approved :: Apache Software License",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: 3.13",
+	"Topic :: Software Development",
+	"Topic :: Software Development :: Libraries",
+	"Topic :: Software Development :: Libraries :: Application Frameworks",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+]
+
 packages = [
-    { include = "poetry_plugin_commands", from = "src" }
+	{ include = "poetry_plugin_commands", from = "src" }
 ]
 
 [tool.poetry.urls]
@@ -93,15 +114,15 @@ ignore = [
 src = ["src/poetry_plugin_commands", "tests", "scripts"]
 
 exclude = [
-    ".git",
-    "build",
-    "dist",
-    "venv",
-    ".venv",
-    "docs",
-    "tests",
-    "dev",
-    "*.egg-info",
+	".git",
+	"build",
+	"dist",
+	"venv",
+	".venv",
+	"docs",
+	"tests",
+	"dev",
+	"*.egg-info",
 ]
 target-version = "py310"
 
