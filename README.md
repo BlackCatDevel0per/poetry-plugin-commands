@@ -9,6 +9,12 @@ This plugin allows you to define aliases or shortcuts for commonly used commands
    Install the plugin using Poetry:
 
    ```bash
+   poetry add poetry-command-aliases
+   ```
+
+   or
+
+   ```bash
    poetry self add poetry-command-aliases
    ```
 
