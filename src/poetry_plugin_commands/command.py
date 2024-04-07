@@ -11,7 +11,7 @@ if TYPE_CHECKING:
 
 
 class ListCommandsCommand(GroupCommand):
-	name = 'user_commands'
+	name = 'user-commands'
 	description = "List of user's commands from toml."
 
 	_user_commands: dict[str, str]
