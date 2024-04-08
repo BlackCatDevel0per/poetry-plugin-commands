@@ -9,13 +9,13 @@ This plugin allows you to define aliases or shortcuts for commonly used commands
    Install the plugin using Poetry:
 
    ```bash
-   pip install --user poetry-plugin-commands
+   pip install poetry-plugin-commands
    ```
 
    or
 
    ```bash
-   poetry self add poetry-plugin-commands
+   pip install --user poetry-plugin-commands
    ```
 
    or at least
