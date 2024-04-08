@@ -27,6 +27,7 @@ class UserCommandsApplicationPlugin(ApplicationPlugin):
 		"""
 		toml_content: dict[str, Any] = self.poetry.pyproject.data
 
+		# TODO: Exec field or catch options of poetry's run command (mb better make something like crun?)
 		user_commands = toml_content['tool']['poetry']['plugins'][self.plugin_section]
 
 		# TODO: Support python commands using toml's optioned values..

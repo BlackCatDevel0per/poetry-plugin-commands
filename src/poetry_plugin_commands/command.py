@@ -50,4 +50,5 @@ class UserCommand(GroupCommand):
 
 
 	def handle(self: UserCommand) -> int:
+		# TODO: Optionally show execution command..
 		return system(self.command)  # noqa: S605

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "poetry-plugin-commands"
-version = "0.0.3"
+version = "0.0.4"
 description = "Poetry plugin for simple custom user commands execution."
 readme = "README.md"
 authors = ["BlackCatDevel0per <bcdev@mail.ru>"]
