@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "poetry-plugin-commands"
-version = "0.0.2"
+version = "0.0.3"
 description = "Poetry plugin for simple custom user commands execution."
 readme = "README.md"
 authors = ["BlackCatDevel0per <bcdev@mail.ru>"]
@@ -35,10 +35,13 @@ Homepage = "https://github.com/BlackCatDevel0per/poetry-plugin-commands"
 Documentation = "https://github.com/BlackCatDevel0per/poetry-plugin-commands"  # TODO: ...
 Repository = "https://github.com/BlackCatDevel0per/poetry-plugin-commands"
 
-[tool.poetry.plugins.commands]
-stree = "tree src"
-test_var = "echo $VAR"
-run_app = "PYTHONPATH=src:. poetry run python src/app_launch/main.py"
+## Simple example
+# [tool.poetry.plugins.commands]
+# stree = "tree src"
+# test_var = "echo $VAR"
+# Test this plugin without installing
+# run_env_stree = ".venv/bin/poetry stree"
+# run_app = "PYTHONPATH=src:. poetry run python src/app_launch/main.py"
 
 [tool.ruff]
 line-length = 100
