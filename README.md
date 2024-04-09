@@ -26,10 +26,10 @@ This plugin allows you to define aliases or shortcuts for commonly used commands
 
 2. **Define Aliases**:
 
-   Add your aliases to the `pyproject.toml` file under the `[tool.poetry.plugins.commands]` section:
+   Add your aliases to the `pyproject.toml` file under the `[tool.poetry-plugin-commands]` section:
 
    ```toml
-   [tool.poetry.plugins.commands]
+   [tool.poetry-plugin-commands]
    stree = "tree src"
    test_var = "echo $VAR"
    run_app = "PYTHONPATH=src:. poetry run python src/app_launch/main.py"

@@ -36,12 +36,12 @@ Documentation = "https://github.com/BlackCatDevel0per/poetry-plugin-commands"  #
 Repository = "https://github.com/BlackCatDevel0per/poetry-plugin-commands"
 
 ## Simple example
-# [tool.poetry.plugins.commands]
-# stree = "tree src"
-# test_var = "echo $VAR"
+[tool.poetry-plugin-commands]
+stree = "tree src"
+test_var = "echo $VAR"
 # Test this plugin without installing
-# run_env_stree = ".venv/bin/poetry stree"
-# run_app = "PYTHONPATH=src:. poetry run python src/app_launch/main.py"
+run_env_stree = ".venv/bin/poetry stree"
+run_app = "PYTHONPATH=src:. poetry run python src/app_launch/main.py"
 
 [tool.ruff]
 line-length = 100

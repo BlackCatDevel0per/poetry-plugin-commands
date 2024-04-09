@@ -17,7 +17,7 @@ if TYPE_CHECKING:
 class UserCommandsApplicationPlugin(ApplicationPlugin):
 	"""Main class of the plugin."""
 
-	plugin_section: Final[str] = 'commands'
+	plugin_section: Final[str] = 'poetry-plugin-commands'
 
 	@property
 	def commands(self: UserCommandsApplicationPlugin) -> list[type[Command]]:
@@ -29,7 +29,7 @@ class UserCommandsApplicationPlugin(ApplicationPlugin):
 
 		# TODO: Exec field or catch options of poetry's run command (mb better make something like crun?)
 		# TODO: Make profiles for ux..
-		user_commands = toml_content['tool']['poetry']['plugins'][self.plugin_section]
+		user_commands = toml_content['tool'][self.plugin_section]
 
 		# TODO: Support python commands using toml's optioned values..
 		commands = [
