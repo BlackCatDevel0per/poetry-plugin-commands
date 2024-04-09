@@ -39,6 +39,7 @@ Repository = "https://github.com/BlackCatDevel0per/poetry-plugin-commands"
 [tool.poetry-plugin-commands]
 stree = "tree src"
 test_var = "echo $VAR"
+test_script = "scripts/test.sh"
 # Test this plugin without installing
 run_env_stree = ".venv/bin/poetry stree"
 run_app = "PYTHONPATH=src:. poetry run python src/app_launch/main.py"
