@@ -29,7 +29,9 @@ class UserCommandsApplicationPlugin(ApplicationPlugin):
 
 		# TODO: Exec field or catch options of poetry's run command (mb better make something like crun?)
 		# TODO: Make profiles for ux..
-		user_commands = toml_content['tool'][self.plugin_section]
+		user_commands = toml_content.get('tool', {}).get(self.plugin_section)
+		if not user_commands:
+			return [UserCommand._new_cls('help', 'echo not implemented..')]  # noqa: SLF001
 
 		# TODO: Support python commands using toml's optioned values..
 		commands = [
