@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "poetry-plugin-commands"
-version = "0.0.9"
+version = "0.0.10"
 description = "Poetry plugin for simple custom user commands execution."
 readme = "README.md"
 authors = ["BlackCatDevel0per <bcdev@mail.ru>"]
@@ -165,5 +165,6 @@ rich = "^13.7.0"
 user_commands = "poetry_plugin_commands.plugins:UserCommandsApplicationPlugin"
 
 [build-system]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 

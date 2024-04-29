@@ -31,7 +31,7 @@ class UserCommandsApplicationPlugin(ApplicationPlugin):
 		# TODO: Make profiles for ux..
 		user_commands = toml_content.get('tool', {}).get(self.plugin_section)
 		if not user_commands:
-			return [UserCommand._new_cls('help', 'echo not implemented..')]  # noqa: SLF001
+			return [ListCommandsCommand, UserCommand._new_cls('help', 'echo not implemented..')]  # noqa: SLF001
 
 		# TODO: Support python commands using toml's optioned values..
 		commands = [

@@ -14,7 +14,7 @@ class ListCommandsCommand(GroupCommand):
 	name = 'user-commands'
 	description = "List of user's commands from toml."
 
-	_user_commands: dict[str, str]
+	_user_commands: dict[str, str] = {}
 
 
 	@property
